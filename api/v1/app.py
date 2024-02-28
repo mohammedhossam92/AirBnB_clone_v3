@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-'''
-Createw Flask app; and register the blueprint app_views to Flask instance app.
-'''
+"""
+Create w Flask app; and register the blueprint
+app_views to Flask instance app.
+"""
 
 from os import getenv
 from flask import Flask, jsonify
