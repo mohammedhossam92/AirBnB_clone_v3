@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""documentation goes here"""
 
 
 from models import storage
