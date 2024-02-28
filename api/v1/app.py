@@ -14,6 +14,7 @@ app.register_blueprint(app_views)
 cors = CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
 # CORS(app, resources={"/api/*": {"origins": "192.168.100.186"}})
 
+
 @app.teardown_appcontext
 def close_db(error):
     """ Close Storage """
@@ -29,6 +30,7 @@ def not_found(error):
         description: a resource was not found
     """
     return make_response(jsonify({'error': "Not found"}), 404)
+
 
 app.config['SWAGGER'] = {
     'title': 'AirBnB clone Restful API',
